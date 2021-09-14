@@ -1,2 +1,108 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  top: 130px;
+  color: white;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+.card {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: 150px;
+  height: 480px;
+}
+
+.image > img {
+  height: 480px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  mix-blend-mode: multiply;
+  width: 580px;
+}
+
+.image {
+  height: 480px;
+  width: 580px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  background-color: #aa5cdb;
+  z-index: 11;
+}
+
+span {
+  color: #aa5cdb;
+}
+
+h1 {
+  color: white;
+  font-family: "Inter";
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  font-family: "Inter";
+  font-weight: 400;
+  padding-right: 40px;
+  line-height: 1.7;
+}
+
+.card-text {
+  padding: 70px;
+  background-color: #1b1938;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.stats-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.stats {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 70px;
+}
+
+.number {
+  color: white;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  font-family: "Inter";
+  text-transform: uppercase;
+  font-weight: 400;
+}
