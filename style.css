@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  position: relative;
-  top: 130px;
-  color: white;
-}
-
-.attribution a {
-  color: #3e52a3;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -105,4 +93,73 @@ p {
   font-family: "Inter";
   text-transform: uppercase;
   font-weight: 400;
+}
+
+@media (max-width: 376px) {
+  body {
+    width: 375px;
+    height: 950px;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 550px;
+    width: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 200px;
+  }
+  .image {
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 350px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 1;
+  }
+  .image img {
+    height: 250px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 350px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  p, h1 {
+    text-align: center;
+  }
+  p {
+    padding: 0;
+  }
+  h1 {
+    margin-bottom: 10px;
+  }
+  .stats-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 25px;
+  }
+  .stats {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .number {
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+  }
+  .card-text {
+    padding: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+  }
 }

@@ -9,12 +9,7 @@ $main-paragraph-color:hsla(0, 0%, 100%, 0.75);
 $main-stat-heading-color:hsla(0, 0%, 100%, 0.6);
 $body-font:15px;
 $main-paragraph-stat-color:white;
-.attribution { font-size: 11px; text-align: center; 
-               position: relative; top: 130px; color: white; 
 
-
-    a { color: hsl(228, 45%, 44%); }
-}
 *{
     margin:0;
     padding:0;
@@ -93,9 +88,72 @@ p{
     font-weight: 400;
 }
 
-@media (max-width:375px) {
-    
+@media (max-width:376px) {
+    body{
+        width: 375px;
+        height: 950px;
+    }
+    .card{
+        flex-direction: column-reverse;
+        height: 550px;
+        width: 350px;
+        margin-left: 10px;
+        margin-right:10px;
+        position: relative;
+        top: 200px;
+
+        
+    }
+    .image{
+        height: 250px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 350px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        z-index: 1;
+    }
+    .image img{
+        height: 250px;
+        position: relative;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 350px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    p,h1{
+        text-align: center;
+    }
+    p{
+        padding: 0;
+    }
+    h1{
+        margin-bottom: 10px;
+    }
+    .stats-row{
+        flex-direction: column;
+        margin-top: 25px;
+        
+    }
+    .stats{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .number{
+        text-align: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .card-text{
+        padding: 25px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+    }
 }
+
 
 
     
